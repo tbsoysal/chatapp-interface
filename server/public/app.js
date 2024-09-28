@@ -47,3 +47,9 @@ function showSendingMessage(message) {
 function scrollToBottom() {
   chatEl.scrollTop = chatEl.scrollHeight;
 }
+
+
+input.addEventListener("keypress", () => {
+  socket.emit('activity', socket.id.substring(0, 5));
+})
+
