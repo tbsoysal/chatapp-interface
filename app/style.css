@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #fff;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+main {
+  overflow-y: scroll;
+  background-color: #F0F0F3;
+  height: 70vh;
+  margin-inline: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.incoming-message {
+  width: fit-content;
+  max-width: 80%;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
+  text-align: left;
+  margin-right: auto;
+}
+
+.incoming-message .info {
+  font-size: 0.8rem;
+  color: gray;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.message .info {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 5px;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message img {
+  width:20px;
+}
+
+
+.message {
+  width: fit-content;
+  max-width: 80%;
+  background-color: #1565C0;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 16px;
+  border-bottom-right-radius: 0;
+  text-align: right;
+  margin-left: auto;
+}
+
+.input-container form {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 10px;
+}
+
+form input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  padding: 15px 15px;
+  border: none;
+  background-color: #F0F0F3;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  background-color: #1565C0;
+  border-radius: 50%;
+  color: black;
+}
